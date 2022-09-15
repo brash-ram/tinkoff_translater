@@ -10,5 +10,5 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class YandexResultTranslationResponseDTO {
-	List<YandexTextTranslationDTO> translations;
+	private List<YandexTextTranslationDTO> translations;
 }

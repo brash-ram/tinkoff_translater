@@ -18,6 +18,13 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 @RequiredArgsConstructor
 public class TranslatorAPIService {
 	private final YandexAPIConfig yandexAPIConfig;
+
+	/**
+	 * Translates the text into the specified language through a request to Yandex api
+	 * @param text text to translate
+	 * @param toLanguage target translation language
+	 * @return translated text
+	 */
 	public String translateText(String text, String toLanguage) {
 		YandexTranslationRequestDTO requestDTO = new YandexTranslationRequestDTO(yandexAPIConfig.getFolderId(),
 				List.of(text.split(" ")), toLanguage);

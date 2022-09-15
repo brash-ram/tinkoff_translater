@@ -10,10 +10,10 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TranslationDetails {
-	Long id;
-	String sourceText;
-	String translatedText;
-	String toLanguage;
-	String ip;
-	Date requestDate;
+	private Long id;
+	private String sourceText;
+	private String translatedText;
+	private String toLanguage;
+	private String ip;
+	private Date requestDate;
 }

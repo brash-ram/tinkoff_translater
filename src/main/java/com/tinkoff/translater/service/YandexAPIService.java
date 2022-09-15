@@ -15,6 +15,10 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
 public class YandexAPIService {
 	private final YandexAPIConfig yandexAPIConfig;
 
+	/**
+	 * Requests an IAM token
+	 * @return IAM token
+	 */
 	public String getYandexIAMToken() {
 		YandexGettingIAMTokenRequestDTO requestDTO = new YandexGettingIAMTokenRequestDTO(yandexAPIConfig.getOAuthToken());
 
