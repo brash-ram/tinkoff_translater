@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "226072dc-8e53-4c2e-a132-03f6e8fa5e48",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21803935"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8090/translator/translate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toLanguage\":\"ru\",\r\n    \"text\":\"Hello tinkoff!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/translator/translate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"translator",
+						"translate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
