@@ -6,7 +6,7 @@ import com.tinkoff.translater.helper.DateHelper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 @Service
 @RequiredArgsConstructor
@@ -23,7 +23,7 @@ public class TranslatorService {
 	 * @return translated text
 	 */
 	public String translateText(String toLanguage, String text, String ip) {
-		Date requestDate = DateHelper.getCurrentDate();
+		Timestamp requestDate = DateHelper.getCurrentTimestamp();
 		String translatedText = translatorAPIService.translateText(text, toLanguage);
 
 		translationDAO.save(new TranslationDetails(null, text, translatedText, toLanguage, ip, requestDate));

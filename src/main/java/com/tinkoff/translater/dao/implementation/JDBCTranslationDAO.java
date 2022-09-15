@@ -32,7 +32,7 @@ public class JDBCTranslationDAO implements TranslationDAO {
 			ps.setString(2, translationDetails.getTranslatedText());
 			ps.setString(3, translationDetails.getToLanguage());
 			ps.setString(4, translationDetails.getIp());
-			ps.setDate(5, translationDetails.getRequestDate());
+			ps.setTimestamp(5, translationDetails.getRequestDate());
 
 			return ps;
 		}, keyHolder);

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 @Data
 @AllArgsConstructor
@@ -15,5 +15,5 @@ public class TranslationDetails {
 	private String translatedText;
 	private String toLanguage;
 	private String ip;
-	private Date requestDate;
+	private Timestamp requestDate;
 }
